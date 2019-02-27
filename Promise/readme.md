@@ -25,6 +25,18 @@
 - The second part describes what to do when the successful condition is met with the resolve() function definition, and what to do when the not successful condition is met with the reject() function definition.
 
 ```javascript
+let promise = new Promise(function(resolve, reject) {
+  setTimeout(() => resolve('done!'), 1000);
+});
+
+// resolve runs the first function in .then
+promise.then(
+  result => alert(result), // shows "done!" after 1 second
+  error => alert(error), // doesn't run
+);
+```
+
+```javascript
 // PROMISE
 /* Every Promise() structure has 2 parts */
 //First Part
@@ -55,3 +67,5 @@ promise1
 ```
 
 ##### The Promise()object is a built-in object in JavaScript ES6. When this object is instantiated using the new keyword, it takes a function as an argument. This single function in turn takes two arguments, each of which are also functions — resolve and reject. So keep in mind that the (resolve, reject) arguments in Promises are actually callback functions.
+
+(https://javascript.info/promise-basics)
