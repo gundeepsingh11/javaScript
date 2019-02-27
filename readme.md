@@ -1,1 +1,1 @@
-1. [Closures](../Closures)
+1. [Closures](/Closures)
