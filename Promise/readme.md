@@ -1,10 +1,22 @@
-###### Promises in JavaScript are a way to handle async calls. Before Promises were introduced in JavaScript ES6, async calls in JavaScript were handled using callback functions. Promises provide a cleaner, more elegant syntax and methodology to handle async calls.
+### Promises in JavaScript are a way to handle async calls. Before Promises were introduced in JavaScript ES6, async calls in JavaScript were handled using callback functions. Promises provide a cleaner, more elegant syntax and methodology to handle async calls.
 
-The resulting promise object has internal properties:
+##### The resulting promise object has internal properties:
 
 - state — initially “pending”, then changes to either “fulfilled” or “rejected”,
 
 * result — an arbitrary value of your choosing, initially undefined.
+
+##### When the executor finishes the job, it should call one of the functions that it gets as arguments:
+
+- resolve(value) — to indicate that the job finished successfully:
+  ⋅⋅\* sets state to "fulfilled",
+  ⋅⋅\* sets result to value.
+
+- reject(error) — to indicate that an error occurred:
+  ⋅⋅\* sets state to "rejected",
+  ⋅⋅\* sets result to error.
+
+![Promise Resolve and Reject image](../img/Story_Listing_Page.png)
 
 ##### A Promise consists of two parts:
 
@@ -28,7 +40,7 @@ let promise1 = new Promise((resolve, reject) => {
     reject('Data Corrupted!');
 });
 //Second Part
-/* Define what to do when the successful condition(i.e. resolve()) is / met, and what to do when the not successful condition(i.e.        / reject()) is met. */
+/* Define what to do when the successful condition(i.e. resolve()) is / met, and what to do when the not successful condition(i.e./ reject()) is met. */
 promise1
   .then(message => {
     console.log(message);
