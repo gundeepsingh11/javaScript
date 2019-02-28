@@ -6,6 +6,4 @@
 
 - [BIND](Bind.md)
 
-* [CALL](Call.md)
-
-- [APPLY](Apply.md)
+* [CALL, APPLY](Call.md)
