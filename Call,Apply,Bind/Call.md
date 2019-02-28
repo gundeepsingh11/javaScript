@@ -3,10 +3,11 @@
 ##### What that means, is that we can call any function, and explicitly specify what this should reference within the calling function. Really similar to the bind() method! This can definitely save us from writing hacky code (even though we are all still hackerzzz).
 
 - The main differences between bind() and call() is that the call() method:
-  ⋅⋅\* Accepts additional parameters as well,
-  ⋅⋅\* Executes the function it was called upon right away.
-  ⋅⋅\* The call() method does not make a copy of the function it is being called on.
-  ⋅⋅\* call() and apply() serve the exact same purpose. The only difference between how they work is that call() expects all parameters to be passed in individually, whereas apply() expects an array of all of our parameters. Example:
+
+  ⋅⋅* Accepts additional parameters as well,
+  ⋅⋅* Executes the function it was called upon right away.
+  ⋅⋅* The call() method does not make a copy of the function it is being called on.
+  ⋅⋅* call() and apply() serve the exact same purpose. The only difference between how they work is that call() expects all parameters to be passed in individually, whereas apply() expects an array of all of our parameters. Example:
 
 ```javascript
 var pokemon = {
