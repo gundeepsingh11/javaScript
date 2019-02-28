@@ -4,4 +4,6 @@
 
 ##### So why did I need to save a this reference? Because inside deleteBtn.addEventListener, this refers to the deleteBtn object. This is unfortunate. Is there a better solution?
 
-[BIND](Bind.md)
+\*[BIND](Bind.md)
+_[CALL](Call.md)
+_[APPLY](Apply.md)
